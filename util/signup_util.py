@@ -432,9 +432,9 @@ def get_filtered_signups(signups: [SignUp],
                          hours_from=0,
                          include_full=True,
                          include_ended=True):
-    return list(filter(lambda signup: signup.get_roles(days_out=days_out,
+    return list(filter(lambda signup: len(signup.get_roles(days_out=days_out,
                                                        days_from=days_from,
                                                        hours_out=hours_out,
                                                        hours_from=hours_from,
                                                        include_full=include_full,
-                                                       include_ended=include_ended) is not None, signups))
+                                                       include_ended=include_ended)) > 0, signups))
