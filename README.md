@@ -1,6 +1,10 @@
 # SignUpGeniusNotifications
 A connection between SignupGenius and Canvas LMS to send updates to a certain course. 
 
+## Deprecated
+This repo will no longer receive updates for this project. New changes will be made on the DHS's NHS GitHub Organization at the following URL:
+https://github.com/DHS-National-Honor-Society/SignUpGeniusNotifications
+
 ## Config Template
 ```json
 {
